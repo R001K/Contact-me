@@ -1,0 +1,135 @@
+/* App.css */
+body {
+  background-color: #001E2B;
+  overflow: hidden;
+  font-family: "Syne", sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  color: #00ED64;
+}
+
+.container {
+  width: 400px;
+  padding: 20px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+input {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: solid 1px #00ED64;
+  outline: none;
+  color: white;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+::placeholder {
+  color: rgb(255, 255, 255);
+  opacity: 1;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  background-color: #00ED64;
+  color: #000000;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  /* Added transition */
+}
+
+button[type="submit"]:hover {
+  background-color: #00c552;
+  /* Changed hover color */
+}
+
+.getintouch {
+  color: rgba(255, 255, 255, 0.178);
+  margin-bottom: 20px;
+  margin-right: 20px;
+  font-family: "Syne", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.main {
+justify-content: center;
+text-align: center;
+  align-items: center;
+}
+
+.success {
+  margin-top: 15px;
+  padding: 5px;
+  padding-left: 10px;
+  font-size: 12px;
+  background-color: #001E2B;
+  color: #00c552;
+  border: none;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .App {
+    text-align: center;
+    align-items: center;
+  }
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    /* Center the container */
+  }
+
+  
+
+  .main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Center items vertically */
+  }
+
+  input {
+    border-radius: 0;
+    border-bottom: solid 1px #00ED64;
+  }
+
+  .getintouch {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+}
+
+.codeimg {
+  margin-right: 10px;
+}

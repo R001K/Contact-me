@@ -1,0 +1,10 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /contacts/{document=**} {
+      allow read: if true; // Allow anyone to read the "contacts" collection
+      allow create: if request.auth != null; // Allow authenticated users to create documents in "contacts"
+    }
+  }
+}
