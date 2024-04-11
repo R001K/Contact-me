@@ -6,7 +6,8 @@ import ContactForm from './ContactForm';
 function App() {
   return (
     <div>
-      <ContactForm   />
+      <ContactForm />
+      {/* <ContactForm /> */}
     </div>
   );
 }
